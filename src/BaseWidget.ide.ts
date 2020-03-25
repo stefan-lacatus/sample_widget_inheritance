@@ -5,6 +5,7 @@ import { NO, YES } from 'bm-core-ui';
 @TWWidgetDefinition('BaseWidget')
 export abstract class IqnoxBaseWidget extends TWComposerWidget {    
     // @override - TWComposerWidget
+    @property('BOOLEAN', defaultValue(true)) onBaseWidget: boolean;
 
     
     // @override - TWComposerWidget
@@ -28,7 +29,8 @@ export class IqnoxWdg1 extends IqnoxBaseWidget {
      * Test Prop.
      */
     @description('Test Prop.')
-    @property('BOOLEAN', defaultValue(true)) test: boolean;
+    @property('BOOLEAN', defaultValue(true)) onWdg1: boolean;
+    @property('BOOLEAN', defaultValue(true)) onWdg11: boolean;
 
     // @override - TWComposerWidget
     widgetIconUrl(): string {
@@ -51,6 +53,7 @@ export class IqnoxWdg1 extends IqnoxBaseWidget {
 export class IqnoxWdg2 extends IqnoxBaseWidget {
     afterRender?(): void {
     }
+    @property('BOOLEAN', defaultValue(true)) onWdg2: boolean;
 
 
     // @override - TWComposerWidget
