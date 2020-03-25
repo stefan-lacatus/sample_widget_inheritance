@@ -16,9 +16,9 @@ export abstract class IqnoxBaseWidget extends TWComposerWidget {
 }
 
 /**
- * A controller that manages the lifecycle of a mashup that is displayed as a popover.
+ * Widget 1
  */
-@description('A controller that manages the lifecycle of a mashup that is displayed as a popover.')
+@description('Widget 1')
 @TWWidgetDefinition('Wdg 1')
 export class IqnoxWdg1 extends IqnoxBaseWidget {
     afterRender?(): void {
@@ -44,9 +44,9 @@ export class IqnoxWdg1 extends IqnoxBaseWidget {
 }
 
 /**
- * A controller that manages the lifecycle of a mashup that is displayed as a window.
+ * Widget 2
  */
-@description('A controller that manages the lifecycle of a mashup that is displayed as a window.')
+@description('Widget 2')
 @TWWidgetDefinition('Wdg 2')
 export class IqnoxWdg2 extends IqnoxBaseWidget {
     afterRender?(): void {
